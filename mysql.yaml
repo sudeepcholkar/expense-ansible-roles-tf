@@ -1,0 +1,7 @@
+- name: configure mysql
+  hosts: mysql
+  become: true
+  vars_files:
+  - /home/ec2-user/ansible/credentials_mysql.yaml
+  roles:
+    - mysql

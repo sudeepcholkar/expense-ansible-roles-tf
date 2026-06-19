@@ -1,0 +1,8 @@
+- name: configure backend
+  hosts: backend
+  become: yes
+  vars_files:
+  - /home/ec2-user/ansible/credentials_mysql.yaml
+  roles:
+    - backend
+    
